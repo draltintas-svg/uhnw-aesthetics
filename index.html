@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5efe7">
+    <meta name="description" content="Private aesthetic review and medical strategy landing page.">
+    <title>U H N W Aesthetics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles.css?v=8">
+  </head>
+  <body>
+    <main class="landing" aria-labelledby="brand-title">
+      <section class="intro" aria-label="U H N W Aesthetics private review">
+        <div class="brand">
+          <h1 class="sr-only" id="brand-title">U H N W Aesthetics</h1>
+          <picture>
+            <source media="(max-width: 560px)" srcset="assets/uhnwa-logo-mobile.png 1x, assets/uhnwa-logo-mobile@2x.png 2x">
+            <img class="brand-logo" src="assets/uhnwa-logo-desktop.png" srcset="assets/uhnwa-logo-desktop.png 1x, assets/uhnwa-logo-desktop@2x.png 2x" width="567" height="169" alt="" aria-hidden="true">
+          </picture>
+        </div>
+
+        <div class="services" aria-label="Services">
+          <p class="service-row primary">
+            <span>MEDICAL STRATEGY</span>
+            <span aria-hidden="true">&bull;</span>
+            <span>DUE DILIGENCE</span>
+            <span aria-hidden="true">&bull;</span>
+            <span>RISK ADVISORY</span>
+          </p>
+          <p class="service-row secondary">
+            <span>SECOND OPINION</span>
+            <span aria-hidden="true">&bull;</span>
+            <span>REVISION ADVISORY</span>
+          </p>
+        </div>
+
+        <p class="statement">
+          Independent medical strategy and surgical due diligence &mdash;<br class="wide-break">
+          before procedures, following unsatisfactory outcomes,<br class="wide-break">
+          and ahead of irreversible aesthetic decisions.
+        </p>
+
+        <p class="note">Private consultations by referral or request</p>
+
+        <a class="review-link" id="primaryLink" href="#request" data-open-request>
+          REQUEST A PRIVATE REVIEW
+        </a>
+
+        <p class="locations" aria-label="Locations">
+          <span>MONACO</span>
+          <span aria-hidden="true">&bull;</span>
+          <span>LONDON</span>
+          <span aria-hidden="true">&bull;</span>
+          <span>DUBAI</span>
+          <span aria-hidden="true">&bull;</span>
+          <span>NEW YORK</span>
+        </p>
+      </section>
+    </main>
+
+    <section class="request-overlay" id="request" aria-labelledby="request-title" aria-hidden="true" hidden>
+      <div class="request-panel" role="dialog" aria-modal="true">
+        <button class="close-request" type="button" aria-label="Close request form" data-close-request>
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <p class="panel-kicker">PRIVATE REVIEW</p>
+        <h2 class="panel-title" id="request-title">Request a private review</h2>
+        <p class="panel-copy">
+          Share the essentials for a confidential first review. A considered response can then be prepared outside the public website.
+        </p>
+
+        <form class="request-form" id="requestForm">
+          <div class="field-grid">
+            <label class="field">
+              <span>Full name</span>
+              <input name="name" autocomplete="name" required>
+            </label>
+
+            <label class="field">
+              <span>Email</span>
+              <input name="email" type="email" autocomplete="email" required>
+            </label>
+
+            <label class="field">
+              <span>Preferred city</span>
+              <select name="city" required>
+                <option value="">Select</option>
+                <option>Monaco</option>
+                <option>London</option>
+                <option>Dubai</option>
+                <option>New York</option>
+                <option>Remote review</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span>Review type</span>
+              <select name="reviewType" required>
+                <option value="">Select</option>
+                <option>Medical strategy</option>
+                <option>Due diligence</option>
+                <option>Risk advisory</option>
+                <option>Second opinion</option>
+                <option>Revision advisory</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="field field-wide">
+            <span>Context</span>
+            <textarea name="context" rows="5" placeholder="Procedure, concern, timeline, background" required></textarea>
+          </label>
+
+          <label class="consent">
+            <input type="checkbox" name="consent" required>
+            <span>I understand this request is for a private review and does not replace urgent medical care.</span>
+          </label>
+
+          <div class="form-actions">
+            <button class="submit-request" type="submit">SEND REQUEST</button>
+            <a class="continue-link" id="websiteLink" href="#" rel="noopener">CONTINUE TO WEBSITE</a>
+          </div>
+
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
