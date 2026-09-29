@@ -1,0 +1,33 @@
+{
+  "releaseId": "uhnw-1611-native-black-20260929",
+  "sourceFiles": 1601,
+  "payloadFiles": 3471,
+  "payloadBytes": 463126587,
+  "assets": [
+    {
+      "name": "uhnw-1611-native-source-20260929.zip",
+      "size": 255880502,
+      "sha256": "0dd8b8a17aa87fe9a9452486366c874ac19512ffdebcc615cd9a062c3727d066"
+    },
+    {
+      "name": "uhnw-1611-native-cpanel-20260929.zip",
+      "size": 292148001,
+      "sha256": "a85569af4dbed1244fdb5b9055d65dda5a9ad0fd7c3ec1d513ea70412ef22cb5"
+    },
+    {
+      "name": "install-uhnw-1611-private-target.py",
+      "size": 3965,
+      "sha256": "1774b196eb0ba8b8b2411b62800d1a75933555fe011662104e68475a53008019"
+    },
+    {
+      "name": "RELEASE-NOTES.md",
+      "size": 2019,
+      "sha256": "813b224b1334d0fff18ba38c05f7d4e1bca16c831428ac167f44fbc9a28bfe86"
+    },
+    {
+      "name": "SHA256SUMS",
+      "size": 391,
+      "sha256": "ad95f22a61ee59f50a7a3c4dcd24da1ac4b881b5e9935d5a1c539da91da13dbd"
+    }
+  ]
+}
